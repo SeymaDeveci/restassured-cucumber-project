@@ -1,0 +1,8 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","","1","Ürün Sorgulama API Testleri","0","0","Çok fazla istek gönderildiğinde rate limit uygulanmalı","0"
+"0","","0","Kullanıcı Yönetimi API Testleri","1","0","Kullanıcı başarıyla silinmeli","0"
+"0","","0","Kullanıcı Yönetimi API Testleri","1","0","Var olmayan kullanıcı sorgulandığında 404 dönmeli","0"
+"0","","0","Ürün Sorgulama API Testleri","1","0","Var olmayan ürün sorgulandığında 404 dönmeli","0"
+"0","","0","Kullanıcı Yönetimi API Testleri","1","0","Kullanıcı listesi başarıyla getirilmeli","0"
+"0","","0","Ürün Sorgulama API Testleri","1","0","Ürün response'u beklenen şemaya uygun olmalı","0"
+"0","","0","Kullanıcı Yönetimi API Testleri","1","0","Kullanıcı başarıyla güncellenmeli","0"
