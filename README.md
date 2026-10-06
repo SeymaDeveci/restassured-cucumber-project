@@ -66,6 +66,20 @@ src/test/resources
 - ✅ Dinamik test verisi yönetimi (JSON dosyalarından okuma)
 - ✅ Ortam bazlı konfigürasyon yönetimi
 
+## Test Notları
+
+### Rate Limit Testi
+
+Rate limit senaryosunda API'ye art arda 30 istek gönderilmektedir.
+
+Testin `429 Too Many Requests` response'u alması beklenmektedir. Ancak kullanılan API, 30 isteğin tamamına `200 OK` response'u döndürmektedir.
+
+Bu nedenle test sonucu:
+
+```text
+Expected: 429 Too Many Requests
+Actual:   200 OK
+```
 ### Projeyi Çalıştırma
 
 ```bash
@@ -118,6 +132,20 @@ This project is a comprehensive API test automation framework built with **Java*
 - ✅ Dynamic test data management (reading from JSON files)
 - ✅ Environment-based configuration management
 
+## Test Notes
+
+### Rate Limit Test
+
+The rate limit scenario sends 30 consecutive requests to the API.
+
+The test expects at least one `429 Too Many Requests` response. However, the API currently returns `200 OK` for all 30 requests.
+
+Therefore, the test result is:
+
+```text
+Expected: 429 Too Many Requests
+Actual:   200 OK
+```
 ### Running the Project
 
 ```bash
