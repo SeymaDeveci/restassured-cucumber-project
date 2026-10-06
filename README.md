@@ -56,7 +56,7 @@ src/test/resources
 ├── schemas/            # JSON Schema dosyaları
 ├── testdata/           # Test verisi (JSON)
 └── config.properties   # Ortam/URL yapılandırması
-
+```
 ### Kapsanan Test Senaryoları
 
 - ✅ CRUD işlemleri (GET, POST, PUT, DELETE)
