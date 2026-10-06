@@ -43,18 +43,19 @@ flowchart TD
 ```
 
 ### Klasör Yapısı
+
+```text
 src/test/java
-├── models/ # POJO sınıfları (User, UpdateUserRequest)
-├── stepdefinitions/ # Gherkin step tanımları
-├── runners/ # Cucumber + JUnit bağlantı sınıfı
-└── utils/ # ConfigReader, TestDataReader
+├── models/             # POJO sınıfları (User, UpdateUserRequest)
+├── stepdefinitions/    # Gherkin step tanımları
+├── runners/            # Cucumber + JUnit bağlantı sınıfı
+└── utils/              # ConfigReader, TestDataReader
 
 src/test/resources
-├── features/ # .feature dosyaları
-├── schemas/ # JSON Schema dosyaları
-├── testdata/ # Test verisi (JSON)
-└── config.properties # Ortam/URL yapılandırması
-
+├── features/           # .feature dosyaları
+├── schemas/            # JSON Schema dosyaları
+├── testdata/           # Test verisi (JSON)
+└── config.properties   # Ortam/URL yapılandırması
 
 ### Kapsanan Test Senaryoları
 
