@@ -1,0 +1,38 @@
+name: API Test Automation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kodları checkout et
+        uses: actions/checkout@v4
+
+      - name: Java 17 kurulumu
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Maven testlerini çalıştır
+        run: mvn test
+
+      - name: Allure raporunu oluştur
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: target/allure-results
+          allure_report: allure-report
+
+      - name: Allure raporunu GitHub Pages'e yayınla
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-report
